@@ -1,1 +1,63 @@
- 
+ <!DOCTYPE html>
+ <html lang="en">
+
+ <head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Calculator</title>
+     <link rel="stylesheet" href="./src/style.css">
+ </head>
+
+ <body>
+
+     <div class="back">
+
+         <div class="calc">
+             <h1>Calculator</h1>
+             <p id="res"></p>
+             <table>
+                 <tr>
+                     <td><button class="but" onclick="clr()">C</button></td>
+                     <td><button class="but" onclick="bspc()">←</button></td>
+                     <td><button class="but" onclick="add('/')">/</button></td>
+                     <td><button class="but" onclick="add('*')">X</button></td>
+                 </tr>
+                 <tr>
+                     <td><button class="but" onclick="add('7')">7</button></td>
+                     <td><button class="but" onclick="add('8')">8</button></td>
+                     <td><button class="but" onclick="add('9')">9</button></td>
+                     <td><button class="but" onclick="add('-')">-</button></td>
+                 </tr>
+                 <tr>
+                     <td><button class="but" onclick="add('4')">4</button></td>
+                     <td><button class="but" onclick="add('5')">5</button></td>
+                     <td><button class="but" onclick="add('6')">6</button></td>
+                     <td><button class="but" onclick="add('+')">+</button></td>
+                 </tr>
+                 <tr>
+                     <td><button class="but" onclick="add('1')">1</button></td>
+                     <td><button class="but" onclick="add('2')">2</button></td>
+                     <td><button class="but" onclick="add('3')">3</button></td>
+                     <td rowspan="2"><button class="but" style="height: 106px" onclick="calc()">=</button></td>
+                 </tr>
+                 <tr>
+                     <td colspan="2"><button class="but" style="width: 106px" onclick="add('0')">0</button></td>
+                     <td><button class="but" onclick="add('.')">.</button></td>
+                 </tr>
+
+             </table>
+
+             <footer>
+                <p>&copy; Leep </p>
+            </footer>
+
+         </div>
+
+     </div>
+    
+
+     <script src="./src/script.js"></script>
+ </body>
+
+ </html>
